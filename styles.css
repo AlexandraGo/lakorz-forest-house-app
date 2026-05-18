@@ -1223,11 +1223,16 @@ h1, h2, h3 {
 
   /* Surroundings */
   .surr-row-3 {
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .surr-row-3 .gallery-item {
-    height: 300px !important;
+    height: 250px !important;
+  }
+
+  .surr-row-3 .gallery-item:last-child {
+    grid-column: span 2;
+    height: 350px !important;
   }
 
   .surr-row-6 {
