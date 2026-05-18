@@ -1171,15 +1171,14 @@ h1, h2, h3 {
     padding: 60px 0;
   }
 
-  /* About: keep side by side */
+  /* About: hide image on mobile, full width text */
   .about-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
-    align-items: start;
   }
 
-  .about-image img {
-    height: 400px;
+  .about-image {
+    display: none;
   }
 
   .about-highlights {
@@ -1276,14 +1275,14 @@ h1, h2, h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* About: still side by side but smaller */
+  /* About: still no image on mobile */
   .about-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 12px;
   }
 
-  .about-image img {
-    height: 300px;
+  .about-image {
+    display: none;
   }
 
   .about-highlights {
