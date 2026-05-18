@@ -1099,29 +1099,12 @@ h1, h2, h3 {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 968px) {
   .about-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 
   .about-highlights {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .gallery-item.featured {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-
-  .house-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .activities-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .family-grid {
@@ -1130,6 +1113,14 @@ h1, h2, h3 {
 
   .footer-content {
     grid-template-columns: 1fr;
+  }
+
+  .surr-row-6 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .surr-row-6 .gallery-item {
+    height: 300px !important;
   }
 }
 
@@ -1155,71 +1146,208 @@ h1, h2, h3 {
     display: flex;
   }
 
-  .hero h1 {
-    font-size: 2.5rem;
+  /* Hero: 2x2 grid instead of 4 in a row */
+  .hero-images {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .section-title {
+  .hero h1 {
     font-size: 2.2rem;
   }
 
-  .section {
-    padding: 80px 0;
+  .hero-subtitle {
+    font-size: 1rem;
   }
 
+  .hero-content {
+    margin-top: -50px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  /* About: keep side by side */
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .about-image img {
+    height: 400px;
+  }
+
+  .about-highlights {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  /* House inside: keep 2x2 */
+  .house-gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .house-gallery .gallery-item {
+    height: 300px !important;
+  }
+
+  /* Outside: 3 + 2 instead of 5 */
+  .outside-row-5 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .outside-row-5 .gallery-item {
+    height: 350px !important;
+  }
+
+  .outside-row-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .outside-row-4 .gallery-item {
+    height: 350px !important;
+  }
+
+  /* Surroundings */
+  .surr-row-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .surr-row-3 .gallery-item {
+    height: 300px !important;
+  }
+
+  .surr-row-6 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .surr-row-6 .gallery-item {
+    height: 250px !important;
+  }
+
+  /* Activities list: single column */
+  .activities-list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* Amenities: single column */
+  .amenities-list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* Form */
   .form-row {
     grid-template-columns: 1fr;
     gap: 0;
   }
 
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .gallery-item.featured {
-    grid-column: span 2;
-  }
-
   .experience-items {
-    gap: 20px;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .activities-grid {
-    grid-template-columns: 1fr;
+  .sauna-item {
+    width: 80% !important;
   }
 }
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
-  .hero-badges {
-    gap: 8px;
+  .hero-images {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .badge {
-    font-size: 0.65rem;
-    padding: 6px 14px;
+  /* About: still side by side but smaller */
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
 
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .house-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-item.featured {
-    grid-column: span 1;
+  .about-image img {
+    height: 300px;
   }
 
   .about-highlights {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 
-  .amenities-list {
+  .highlight-number {
+    font-size: 1.4rem;
+  }
+
+  .highlight-label {
+    font-size: 0.6rem;
+  }
+
+  /* House inside: 2x2 */
+  .house-gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .house-gallery .gallery-item {
+    height: 200px !important;
+  }
+
+  /* Outside: 2 columns */
+  .outside-row-5 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .outside-row-5 .gallery-item {
+    height: 250px !important;
+  }
+
+  .outside-row-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .outside-row-4 .gallery-item {
+    height: 250px !important;
+  }
+
+  /* Surroundings: 2 columns */
+  .surr-row-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .surr-row-3 .gallery-item {
+    height: 200px !important;
+  }
+
+  .surr-row-6 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .surr-row-6 .gallery-item {
+    height: 200px !important;
+  }
+
+  .sauna-item {
+    width: 100% !important;
+  }
+
+  .family-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-content {
     grid-template-columns: 1fr;
   }
 }
