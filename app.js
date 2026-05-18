@@ -67,7 +67,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 const PRICE_SHORT_PLN = 450;  // 3-4 nights
 const PRICE_LONG_PLN = 400;   // 5+ nights
 const PRICE_SHORT_EUR = 100;
-const PRICE_LONG_EUR = 90;
+const PRICE_LONG_EUR = 100;
 const MIN_NIGHTS = 3;
 
 // Google Sheets CSV URL
