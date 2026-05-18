@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Łąkorz Forest House | Dom w Lesie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">🌲 Łąkorz Forest House</a>
+      <div class="nav-right">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-option active" data-lang="en">EN</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-option" data-lang="pl">PL</span>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" data-en="Home" data-pl="Start">Home</a></li>
+        <li><a href="#about" data-en="About" data-pl="O nas">About</a></li>
+        <li><a href="#gallery" data-en="The House" data-pl="Dom">The House</a></li>
+        <li><a href="#activities" data-en="Activities" data-pl="Aktywności">Activities</a></li>
+        <li><a href="#availability" data-en="Availability" data-pl="Dostępność">Availability</a></li>
+        <li><a href="#contact" data-en="Contact" data-pl="Kontakt">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero hero-gallery">
+    <div class="hero-images">
+      <div class="hero-img"><img src="images/House Outside/house outside.jpg" alt="House exterior"></div>
+      <div class="hero-img"><img src="images/House Outside/Coffe outside.jpg" alt="Morning coffee"></div>
+      <div class="hero-img"><img src="images/House Outside/Lunch outside.jpg" alt="Outdoor dining"></div>
+      <div class="hero-img"><img src="images/House Outside/outdoor sunset.jpg" alt="Sunset view"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Łąkorz Forest House</h1>
+      <p class="hero-subtitle" data-en="A family retreat surrounded by lakes, forest & wildlife" data-pl="Rodzinny dom wypoczynkowy otoczony jeziorami, lasem i dziką przyrodą">A family retreat surrounded by lakes, forest & wildlife</p>
+      <a href="#availability" class="btn btn-primary" data-en="Check Availability" data-pl="Sprawdź Dostępność">Check Availability</a>
+    </div>
+  </section>
+
+  <!-- Experience Banner -->
+  <section class="experience-banner">
+    <div class="container">
+      <div class="experience-items">
+        <div class="experience-item">
+          <span class="exp-text" data-en="Lake Osetno — 200m away" data-pl="Jezioro Osetno — 200m">Lake Osetno — 200m away</span>
+        </div>
+        <div class="experience-item">
+          <span class="exp-text" data-en="Wildlife at your doorstep" data-pl="Dzika przyroda za progiem">Wildlife at your doorstep</span>
+        </div>
+        <div class="experience-item">
+          <span class="exp-text" data-en="Sauna & campfire" data-pl="Sauna i ognisko">Sauna & campfire</span>
+        </div>
+        <div class="experience-item">
+          <span class="exp-text" data-en="Starlit skies, zero light pollution" data-pl="Gwiaździste niebo, zero zanieczyszczenia">Starlit skies, zero light pollution</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title" data-en="Welcome to Łąkorz" data-pl="Witamy w Łąkorzu">Welcome to Łąkorz</h2>
+      <p class="section-subtitle" data-en="A two-story forest house where families reconnect with nature" data-pl="Dwupiętrowy dom w lesie, gdzie rodziny łączą się z naturą">A two-story forest house where families reconnect with nature</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-para" data-lang-key="about-p1">Nestled in the heart of <strong>Łąkorz</strong>, surrounded by <strong>pristine lakes</strong> and <strong>endless forest</strong>, our house is the perfect escape for <strong>families</strong> looking to slow down and enjoy nature together. Just <strong>200 meters from Lake Osetno</strong>, you'll wake up to birdsong and fall asleep to the sound of the wind in the trees.</p>
+          <p class="about-para" data-lang-key="about-p2">The ground floor features a fully equipped <strong>kitchen</strong>, a cozy <strong>living room</strong>, and a bathroom. Upstairs you'll find two comfortable <strong>bedrooms</strong>. The house is done in a very <strong>classic style</strong> — beautiful <strong>wooden details</strong> throughout, where wood and classic design combine perfectly to create a <strong>warm, timeless atmosphere</strong>. Outside, enjoy the <strong>campfire area</strong>, a private <strong>sauna</strong>, and a refreshing plunge pool.</p>
+          <p class="about-para" data-lang-key="about-p3">The region is a paradise for <strong>nature lovers</strong> — multiple <strong>lakes</strong> within walking or biking distance, forests full of <strong>mushrooms and berries</strong>, and charming towns like <strong>Toruń</strong> and <strong>Iława</strong> just a short drive away. It's also perfect for <strong>hiking</strong>, <strong>biking</strong>, and simply being surrounded by <strong>wildlife</strong>. Around the house you'll regularly spot <strong>squirrels, hedgehogs, rabbits, and deer</strong>.</p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <span class="highlight-number">5</span>
+              <span class="highlight-label" data-en="Guests max" data-pl="Maks. gości">Guests max</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-number">2</span>
+              <span class="highlight-label" data-en="Bedrooms" data-pl="Sypialnie">Bedrooms</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-number">1000m²</span>
+              <span class="highlight-label" data-en="Property" data-pl="Działka">Property</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-number">200m</span>
+              <span class="highlight-label" data-en="To the lake" data-pl="Do jeziora">To the lake</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-number">🐾</span>
+              <span class="highlight-label" data-en="Pet friendly" data-pl="Przyjazne zwierzętom">Pet friendly</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="images/House Outside/house outside.jpg" alt="Łąkorz Forest House exterior">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery: The House -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <h2 class="section-title" data-en="The House" data-pl="Dom">The House</h2>
+      <p class="section-subtitle" data-en="Inside and outside — comfort meets nature" data-pl="Wewnątrz i na zewnątrz — komfort spotyka naturę">Inside and outside — comfort meets nature</p>
+
+      <!-- Inside -->
+      <p class="section-label" data-en="Inside" data-pl="Wnętrze">Inside</p>
+      <!-- Living rooms side by side -->
+      <div class="gallery-grid house-gallery">
+        <div class="gallery-item">
+          <img src="images/House Inside/Living room.jpg" alt="Living room">
+          <div class="gallery-caption" data-en="Living Room" data-pl="Salon">Living Room</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/House Inside/Living room 2.jpg" alt="Living room second view">
+          <div class="gallery-caption" data-en="Living Room" data-pl="Salon">Living Room</div>
+        </div>
+      </div>
+      <!-- Master & Kids rooms side by side -->
+      <div class="gallery-grid house-gallery" style="margin-top: 8px;">
+        <div class="gallery-item">
+          <img src="images/House Inside/Main Living room.jpg" alt="Master room">
+          <div class="gallery-caption" data-en="Master Room" data-pl="Pokój Główny">Master Room</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/House Inside/Room 2.jpg" alt="Kids room upstairs">
+          <div class="gallery-caption" data-en="Kids Room" data-pl="Pokój Dziecięcy">Kids Room</div>
+        </div>
+      </div>
+      <div class="sauna-centered">
+        <div class="gallery-item sauna-item">
+          <img src="images/House Inside/Sauna and pool.jpg" alt="Sauna and plunge pool">
+          <div class="gallery-caption" data-en="Sauna & Pool" data-pl="Sauna i Basen">Sauna & Pool</div>
+        </div>
+      </div>
+
+      <!-- Outside -->
+      <p class="section-label" style="margin-top: 60px;" data-en="Outside" data-pl="Na Zewnątrz">Outside</p>
+      <div class="gallery-grid outside-row-5">
+        <div class="gallery-item">
+          <img src="images/House Outside/house outside.jpg" alt="House exterior">
+        </div>
+        <div class="gallery-item">
+          <img src="images/House Outside/Coffe outside.jpg" alt="Morning coffee outside">
+        </div>
+        <div class="gallery-item">
+          <img src="images/House Outside/Lunch outside.jpg" alt="Lunch outside">
+        </div>
+        <div class="gallery-item">
+          <img src="images/House Outside/outdoor sunset.jpg" alt="Sunset from the property">
+        </div>
+        <div class="gallery-item">
+          <img src="images/House Outside/house outside 2.jpg" alt="House exterior second view">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery: Activities & Surroundings -->
+  <section class="section gallery gallery-activities">
+    <div class="container">
+      <h2 class="section-title" data-en="The Surroundings" data-pl="Okolica">The Surroundings</h2>
+      <p class="section-subtitle" data-en="Lakes, forest, wildlife — adventure starts at your doorstep" data-pl="Jeziora, las, dzika przyroda — przygoda zaczyna się za progiem">Lakes, forest, wildlife — adventure starts at your doorstep</p>
+
+      <!-- 1. Lake — 3 in a row -->
+      <p class="section-label" data-en="Lake" data-pl="Jezioro">Lake</p>
+      <div class="gallery-grid surr-row-3">
+        <div class="gallery-item">
+          <img src="images/Activities/Molo with boat.jpg" alt="Dock with boat">
+          <div class="gallery-caption" data-en="Boat at the Dock" data-pl="Łódka na Molo">Boat at the Dock</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Activities/Beach:Lake.jpg" alt="Beach area at the lake">
+          <div class="gallery-caption" data-en="Lake Beach" data-pl="Plaża nad Jeziorem">Lake Beach</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Activities/lake.jpg" alt="Lake Osetno" style="object-position: top">
+          <div class="gallery-caption" data-en="Lake Osetno" data-pl="Jezioro Osetno">Lake Osetno</div>
+        </div>
+      </div>
+
+      <!-- 2. Activities -->
+      <p class="section-label" style="margin-top: 40px;" data-en="Activities" data-pl="Aktywności">Activities</p>
+      <!-- Kayaking full width -->
+      <div class="gallery-grid surr-row-landscape">
+        <div class="gallery-item">
+          <img src="images/Activities/Kayaking and fishing.jpg" alt="Kayaking and fishing on the lake">
+          <div class="gallery-caption" data-en="Kayaking & Fishing" data-pl="Kajaki i Wędkowanie">Kayaking & Fishing</div>
+        </div>
+      </div>
+      <!-- Activities row -->
+      <div class="gallery-grid surr-row-6" style="margin-top: 8px;">
+        <div class="gallery-item">
+          <img src="images/Activities/Kayak area.jpg" alt="Kayak launch area">
+          <div class="gallery-caption" data-en="Kayak Area" data-pl="Miejsce na Kajaki">Kayak Area</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Activities/mushroom and forest 1.jpg" alt="Mushrooms in the forest">
+          <div class="gallery-caption" data-en="Mushroom Picking" data-pl="Grzybobranie">Mushroom Picking</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Activities/Mushrooms 2.jpg" alt="Mushrooms close up">
+          <div class="gallery-caption" data-en="Mushrooms" data-pl="Grzyby">Mushrooms</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Activities/Campfire .jpg" alt="Campfire">
+          <div class="gallery-caption" data-en="Campfire" data-pl="Ognisko">Campfire</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Activities/Volleyball.jpg" alt="Volleyball">
+          <div class="gallery-caption" data-en="Volleyball" data-pl="Siatkówka">Volleyball</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Activities/Cards.jpg" alt="Playing cards">
+          <div class="gallery-caption" data-en="Card Games" data-pl="Gry w Karty">Card Games</div>
+        </div>
+      </div>
+
+      <!-- 3. Sunset View — 3 in a row -->
+      <p class="section-label" style="margin-top: 40px;" data-en="Sunset View" data-pl="Zachody Słońca">Sunset View</p>
+      <div class="gallery-grid surr-row-3">
+        <div class="gallery-item">
+          <img src="images/Activities/sunset 2.jpg" alt="Golden sunset">
+          <div class="gallery-caption" data-en="Golden Hour" data-pl="Złota Godzina">Golden Hour</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Activities/Bench sunset 2.jpg" alt="Bench overlooking lake at sunset">
+          <div class="gallery-caption" data-en="Lake View" data-pl="Widok na Jezioro">Lake View</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Activities/sunset Molo.jpg" alt="Sunset from the dock">
+          <div class="gallery-caption" data-en="Dock Sunset" data-pl="Zachód z Molo">Dock Sunset</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities" class="section activities">
+    <div class="container">
+      <h2 class="section-title" data-en="Things to Do" data-pl="Co Można Robić">Things to Do</h2>
+
+      <div class="activities-list">
+        <div class="amenities-column">
+          <ul>
+            <li data-en="Mushroom Picking" data-pl="Grzybobranie">Mushroom Picking</li>
+            <li data-en="Fishing (permit required)" data-pl="Wędkowanie (wymagane zezwolenie)">Fishing (permit required)</li>
+            <li data-en="Kayaking & Paddling — best spot: Lake Łąkorz" data-pl="Kajakarstwo i Paddle — najlepsze miejsce: Jezioro Łąkorz">Kayaking & Paddling — best spot: Lake Łąkorz</li>
+            <li data-en="Biking & Hiking" data-pl="Jazda na Rowerze i Piesze Wędrówki">Biking & Hiking</li>
+          </ul>
+        </div>
+        <div class="amenities-column">
+          <ul>
+            <li data-en="Tennis — Nowe Miasto Lubawskie (20 min drive)" data-pl="Tenis — Nowe Miasto Lubawskie (20 min samochodem)">Tennis — Nowe Miasto Lubawskie (20 min drive)</li>
+            <li data-en="Visit Toruń (UNESCO) & Iława" data-pl="Odwiedź Toruń (UNESCO) i Iławę">Visit Toruń (UNESCO) & Iława</li>
+            <li data-en="Lake Swimming — Lake Osetno, 200m away" data-pl="Kąpiel w Jeziorze — Jezioro Osetno, 200m">Lake Swimming — Lake Osetno, 200m away</li>
+            <li data-en="Sauna & Campfire Evenings" data-pl="Sauna i Wieczory przy Ognisku">Sauna & Campfire Evenings</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Family Testimonials -->
+  <section class="section family-section">
+    <div class="container">
+      <h2 class="section-title" data-en="What Families Say" data-pl="Co Mówią Rodziny">What Families Say</h2>
+      <div class="family-grid">
+        <div class="family-card">
+          <div class="family-quote" data-en="&quot;The kids didn't ask for screens once. They were too busy fishing, picking mushrooms, and roasting marshmallows by the fire.&quot;" data-pl="&quot;Dzieci ani razu nie poprosiły o telefon. Były zbyt zajęte łowieniem ryb, zbieraniem grzybów i pieczeniem pianek przy ognisku.&quot;">"The kids didn't ask for screens once. They were too busy fishing, picking mushrooms, and roasting marshmallows by the fire."</div>
+          <p class="family-author">— The Martinez Family</p>
+        </div>
+        <div class="family-card">
+          <div class="family-quote" data-en="&quot;The sauna after a day of kayaking on Lake Łąkorz was absolute heaven. We're already planning our next visit.&quot;" data-pl="&quot;Sauna po dniu spędzonym na kajakach na Jeziorze Łąkorz to był absolutny raj. Już planujemy następną wizytę.&quot;">"The sauna after a day of kayaking on Lake Łąkorz was absolute heaven. We're already planning our next visit."</div>
+          <p class="family-author">— The Johansen Family</p>
+        </div>
+        <div class="family-card">
+          <div class="family-quote" data-en="&quot;200 meters to the lake, forest everywhere, and a campfire every evening. This is what family holidays should be.&quot;" data-pl="&quot;200 metrów do jeziora, las dookoła i ognisko każdego wieczoru. Tak powinny wyglądać rodzinne wakacje.&quot;">"200 meters to the lake, forest everywhere, and a campfire every evening. This is what family holidays should be."</div>
+          <p class="family-author">— The Kowalski Family</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Section -->
+  <section id="amenities" class="section amenities">
+    <div class="container">
+      <h2 class="section-title" data-en="Amenities" data-pl="Udogodnienia">Amenities</h2>
+      <div class="amenities-list">
+        <div class="amenities-column">
+          <ul>
+            <li><span>🍳</span> <span data-en="Fully equipped kitchen" data-pl="W pełni wyposażona kuchnia">Fully equipped kitchen</span></li>
+            <li><span>🛋️</span> <span data-en="Living room" data-pl="Salon">Living room</span></li>
+            <li><span>🚿</span> <span data-en="Bathroom" data-pl="Łazienka">Bathroom</span></li>
+            <li><span>🛏️</span> <span data-en="2 bedrooms (upstairs)" data-pl="2 sypialnie (piętro)">2 bedrooms (upstairs)</span></li>
+            <li><span>🧖</span> <span data-en="Private sauna" data-pl="Prywatna sauna">Private sauna</span></li>
+          </ul>
+        </div>
+        <div class="amenities-column">
+          <ul>
+            <li><span>🔥</span> <span data-en="Campfire area" data-pl="Miejsce na ognisko">Campfire area</span></li>
+            <li><span>🅿️</span> <span data-en="Free parking" data-pl="Bezpłatny parking">Free parking</span></li>
+            <li><span>📶</span> <span data-en="Free Wi-Fi" data-pl="Darmowe Wi-Fi">Free Wi-Fi</span></li>
+            <li><span>🐾</span> <span data-en="Pet friendly" data-pl="Przyjazne zwierzętom">Pet friendly</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Availability Section -->
+  <section id="availability" class="section availability">
+    <div class="container">
+      <h2 class="section-title" data-en="Check Availability" data-pl="Sprawdź Dostępność">Check Availability</h2>
+      <p class="section-subtitle" data-en="Select your dates to see if the house is available for your family." data-pl="Wybierz daty, aby sprawdzić czy dom jest dostępny dla Twojej rodziny.">Select your dates to see if the house is available for your family.</p>
+
+      <div class="pricing-info">
+        <p data-en="450 PLN/night (~€100) • 5+ nights: 400 PLN/night (~€90)" data-pl="450 zł/noc (~€100) • 5+ nocy: 400 zł/noc (~€90)">450 PLN/night (~€100) • 5+ nights: 400 PLN/night (~€90)</p>
+        <p data-en="Minimum stay: 3 nights • Max 5 guests • Pet friendly" data-pl="Minimalny pobyt: 3 noce • Maks. 5 gości • Przyjazne zwierzętom">Minimum stay: 3 nights • Max 5 guests • Pet friendly</p>
+      </div>
+
+      <div class="calendar-container">
+        <div class="calendar">
+          <div class="calendar-header">
+            <button class="calendar-nav" id="prev-month" aria-label="Previous month">&#8249;</button>
+            <h3 id="calendar-month-year"></h3>
+            <button class="calendar-nav" id="next-month" aria-label="Next month">&#8250;</button>
+          </div>
+          <div class="calendar-weekdays" id="calendar-weekdays">
+            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+          </div>
+          <div class="calendar-days" id="calendar-days"></div>
+        </div>
+
+        <div class="calendar-legend">
+          <div class="legend-item">
+            <span class="legend-dot available"></span>
+            <span data-en="Available" data-pl="Dostępne">Available</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot booked"></span>
+            <span data-en="Booked" data-pl="Zarezerwowane">Booked</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot selected"></span>
+            <span data-en="Your Selection" data-pl="Twój Wybór">Your Selection</span>
+          </div>
+        </div>
+
+        <div class="booking-summary" id="booking-summary" hidden>
+          <h3 data-en="Your Selection" data-pl="Twój Wybór">Your Selection</h3>
+          <p><strong data-en="Check-in:" data-pl="Zameldowanie:">Check-in:</strong> <span id="checkin-date">—</span></p>
+          <p><strong data-en="Check-out:" data-pl="Wymeldowanie:">Check-out:</strong> <span id="checkout-date">—</span></p>
+          <p><strong data-en="Nights:" data-pl="Noce:">Nights:</strong> <span id="num-nights">—</span></p>
+          <p id="rate-info" class="rate-info"></p>
+          <p class="booking-price"><strong data-en="Total:" data-pl="Razem:">Total:</strong> <span id="total-price">—</span></p>
+          <p class="booking-note" data-en="Minimum stay: 3 nights. 5+ nights = discounted rate (400 PLN/night)." data-pl="Minimalny pobyt: 3 noce. 5+ nocy = cena promocyjna (400 zł/noc).">Minimum stay: 3 nights. 5+ nights = discounted rate (400 PLN/night).</p>
+          <a href="#contact" class="btn btn-primary" data-en="Inquire About This Stay" data-pl="Zapytaj o Ten Termin">Inquire About This Stay</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title" data-en="Book Your Stay" data-pl="Zarezerwuj Pobyt">Book Your Stay</h2>
+      <p class="section-subtitle" data-en="Ready for a family adventure in the forest? Send us a message!" data-pl="Gotowi na rodzinną przygodę w lesie? Napisz do nas!">Ready for a family adventure in the forest? Send us a message!</p>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guest-name" data-en="Full Name" data-pl="Imię i Nazwisko">Full Name</label>
+            <input type="text" id="guest-name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="guest-email" data-en="Email" data-pl="Email">Email</label>
+            <input type="email" id="guest-email" name="email" required placeholder="your@email.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guest-phone" data-en="Phone" data-pl="Telefon">Phone</label>
+            <input type="tel" id="guest-phone" name="phone" required placeholder="+48 123 456 789">
+          </div>
+          <div class="form-group">
+            <label for="guest-guests" data-en="Number of Guests" data-pl="Liczba Gości">Number of Guests</label>
+            <select id="guest-guests" name="guests">
+              <option value="" data-en="Select..." data-pl="Wybierz...">Select...</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guest-checkin" data-en="Preferred Check-in" data-pl="Preferowana data zameldowania">Preferred Check-in</label>
+            <input type="date" id="guest-checkin" name="checkin">
+          </div>
+          <div class="form-group">
+            <label for="guest-checkout" data-en="Preferred Check-out" data-pl="Preferowana data wymeldowania">Preferred Check-out</label>
+            <input type="date" id="guest-checkout" name="checkout">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guest-children" data-en="Children (ages)" data-pl="Dzieci (wiek)">Children (ages)</label>
+            <input type="text" id="guest-children" name="children" placeholder="e.g. 3 and 7 years old">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="guest-message" data-en="Message" data-pl="Wiadomość">Message</label>
+          <textarea id="guest-message" name="message" rows="5" placeholder="Tell us about your trip plans..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-en="Send Inquiry" data-pl="Wyślij Zapytanie">Send Inquiry</button>
+      </form>
+
+      <div class="form-success" id="form-success" hidden>
+        <p data-en="✅ Thank you! We'll get back to you within 24 hours." data-pl="✅ Dziękujemy! Odpowiemy w ciągu 24 godzin.">✅ Thank you! We'll get back to you within 24 hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>🌲 Łąkorz Forest House</h3>
+          <p data-en="Where families come to breathe, play, and reconnect." data-pl="Gdzie rodziny oddychają, bawią się i łączą na nowo.">Where families come to breathe, play, and reconnect.</p>
+        </div>
+        <div class="footer-highlights">
+          <p data-en="🏞️ 200m to Lake Osetno" data-pl="🏞️ 200m do Jeziora Osetno">🏞️ 200m to Lake Osetno</p>
+          <p data-en="🌲 Surrounded by forest" data-pl="🌲 Otoczony lasem">🌲 Surrounded by forest</p>
+          <p data-en="🛶 Lake Łąkorz for kayaking" data-pl="🛶 Jezioro Łąkorz na kajaki">🛶 Lake Łąkorz for kayaking</p>
+          <p data-en="📍 Łąkorz, Poland" data-pl="📍 Łąkorz, Polska">📍 Łąkorz, Poland</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Łąkorz Forest House. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
