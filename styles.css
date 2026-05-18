@@ -1199,12 +1199,17 @@ h1, h2, h3 {
     height: 300px !important;
   }
 
-  /* Outside: 3 + 2 instead of 5 */
+  /* Outside: 2x2 + 1 bigger */
   .outside-row-5 {
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   .outside-row-5 .gallery-item {
+    height: 250px !important;
+  }
+
+  .outside-row-5 .gallery-item:last-child {
+    grid-column: span 2;
     height: 350px !important;
   }
 
