@@ -28,6 +28,14 @@ langToggle.addEventListener('click', (e) => {
     }
   });
 
+  // Swap about paragraphs
+  const aboutEn = document.querySelector('.about-para-en');
+  const aboutPl = document.querySelector('.about-para-pl');
+  if (aboutEn && aboutPl) {
+    aboutEn.style.display = lang === 'en' ? 'block' : 'none';
+    aboutPl.style.display = lang === 'pl' ? 'block' : 'none';
+  }
+
   // Update calendar weekdays
   const weekdays = document.getElementById('calendar-weekdays');
   if (lang === 'pl') {
